@@ -80,8 +80,13 @@ function validateForm() {
         valid = false;
         showError("checkbox1-error", "Vous devez accepter les conditions d'utilisation.");
     }
+    if (valid) { // if valid = true display message
+      
+      alert('Merci, votre réservation a été pris en compte avec succès !');
+  }
 
     return valid;
+    
 }
 
 function showError(elementId, message) { // Display an error message
