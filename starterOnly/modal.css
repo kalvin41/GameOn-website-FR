@@ -100,7 +100,24 @@ img {
     margin-top: -15px;
   }
 } 
-
+#success-modal{
+  display:none;
+  height: 650px;
+  padding: 250px 8%;
+  margin: 15px auto;
+  font-weight: lighter;
+}
+#success-modal input {
+  background: #fe142f;
+  display: block;
+  margin: 300px auto;
+  border-radius: 7px;
+  font-size: 1rem;
+  padding: 12px 70px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
 main {
   font-size: 130%;
   font-weight: bolder;
@@ -247,7 +264,7 @@ input[data-error]::after {
   display: block;
   width: 20px;
   height: 20px;
-  border: 2px solid #279e7a;
+  border: 2px solid #c4c4c4;
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -262,6 +279,7 @@ input[data-error]::after {
   width: 13px;
   height: 13px;
   background-color: #279e7a;
+  
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -275,12 +293,15 @@ input[data-error]::after {
 .checkbox-input {
   display: none;
 }
+
 .checkbox-input:checked + .checkbox-label .checkbox-icon::after,
 .checkbox-input:checked + .checkbox2-label .checkbox-icon::after {
   opacity: 1;
+  
 }
 .checkbox-input:checked + .checkbox2-label .checkbox-icon {
   background: #279e7a;
+  
 }
 .checkbox2-label .checkbox-icon {
   border-radius: 4px;

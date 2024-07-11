@@ -15,6 +15,7 @@ const closeModal = document.querySelector(".close");
 const form = document.getElementById("reserve"); //select form
 
 
+
 // launch modal event
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 
@@ -34,8 +35,8 @@ closeModal.addEventListener("click", function() {
 form.addEventListener('submit', function(event) {
   event.preventDefault()
   if (validateForm()) {
-      modalbg.style.display = "none";
-      window.location.href = 'index.html';
+    form.style.display = "none";
+    showSuccessModal();
   }
 });
 
@@ -80,10 +81,7 @@ function validateForm() {
         valid = false;
         showError("checkbox1-error", "Vous devez accepter les conditions d'utilisation.");
     }
-    if (valid) { // if valid = true display message
-      
-      alert('Merci, votre réservation a été pris en compte avec succès !');
-  }
+    
 
     return valid;
     
@@ -103,4 +101,13 @@ function clearErrors() { // Remove error message if the condition true
 function isValidDate(dateString) { // Check if is a  valide date
   const date = new Date(dateString);
   return !isNaN(date.getTime());
+}
+function showSuccessModal() {
+  const successModal = document.getElementById("success-modal");
+  successModal.style.display = "block";
+}
+function closeSuccessModal() {
+  const successModal = document.getElementById("success-modal");
+  modalbg.style.display = "none";
+  window.location.href = 'index.html'; // Redirection après fermeture du modal
 }
