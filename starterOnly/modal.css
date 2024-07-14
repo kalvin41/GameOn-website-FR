@@ -17,7 +17,7 @@ body {
   background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -155,10 +155,7 @@ main {
 }
 
 /* Modal form */
-.error-message{
-  color: #ff0000;
-  font-size: small;
-}
+
 .button {
   background: #fe142f;
   margin-top: 0.5em;
@@ -264,7 +261,7 @@ input[data-error]::after {
   display: block;
   width: 20px;
   height: 20px;
-  border: 2px solid #c4c4c4;
+  border: 2px solid #279e7a;
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -279,7 +276,6 @@ input[data-error]::after {
   width: 13px;
   height: 13px;
   background-color: #279e7a;
-  
   border-radius: 50%;
   text-indent: 29px;
   white-space: nowrap;
@@ -293,15 +289,12 @@ input[data-error]::after {
 .checkbox-input {
   display: none;
 }
-
 .checkbox-input:checked + .checkbox-label .checkbox-icon::after,
 .checkbox-input:checked + .checkbox2-label .checkbox-icon::after {
   opacity: 1;
-  
 }
 .checkbox-input:checked + .checkbox2-label .checkbox-icon {
   background: #279e7a;
-  
 }
 .checkbox2-label .checkbox-icon {
   border-radius: 4px;
@@ -428,8 +421,23 @@ input[data-error]::after {
   font-weight: normal;
   font-size: 16px;
 }
+@media (min-width: 1024px) {
+  .hero-section{
+    width: 1240px;
+    height: 650px;
+    
+  }
+  .hero-img{
+    position: relative;
+  }
+  .hero-img img {
+    width:92%;
+    left: 9%;
+   position: absolute;
+  }
+}
 .hero-section {
-  min-height: 93vh;
+  min-height: 60vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -460,7 +468,7 @@ input[data-error]::after {
   z-index: 1;
 }
 .hero-headline {
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: normal;
   white-space: nowrap;
 }
@@ -480,12 +488,16 @@ input[data-error]::after {
 }
 .hero-img {
   grid-column: span 8;
+  
+    
 }
 .hero-img img {
-  width: 100%;
+  
   height: 100%;
   display: block;
   padding: 0;
+      
+    
 }
 .copyrights {
   color: #fe142f;
@@ -507,13 +519,10 @@ footer {
     display: block;
     box-shadow: unset;
   }
-
   .hero-content {
     background: #fff;
     color: #000;
     padding: 20px;
-    justify-content: center;
-    text-align: center;
   }
   .hero-content::after {
     content: unset;
@@ -522,14 +531,12 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 2.2rem;
+    font-size: 4.5rem;
     white-space: normal;
-    width: 77%;
   }
   .hero-text {
     width: unset;
     font-size: 1.5rem;
-    width: 75%;
   }
   .hero-img img {
     border-radius: 10px;
@@ -555,4 +562,3 @@ footer {
     opacity: 1;
   }
 }
-
