@@ -20,7 +20,13 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-
+.error-message{
+  color: #fe142f;
+  font-size: small;
+}
+#location-error{
+  margin-left: 2px;
+}
 p {
   margin-bottom: 0;
   padding: 0.5vw;
