@@ -73,6 +73,10 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
+    color: #ff0000;
+  }
+  .topnav a.icon:hover {
+    color: #ffffff;
   }
 }
 
@@ -97,7 +101,7 @@ img {
   .topnav a.icon {
     float: right;
     display: block;
-    margin-top: -15px;
+    
   }
 } 
 #success-modal{
@@ -515,6 +519,12 @@ footer {
   margin: 0 20px;
 }
 @media screen and (max-width: 800px) {
+
+  .header-logo img{
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
   .hero-section {
     display: block;
     box-shadow: unset;
@@ -522,7 +532,7 @@ footer {
   .hero-content {
     background: #fff;
     color: #000;
-    padding: 20px;
+    padding: 0px;
   }
   .hero-content::after {
     content: unset;
@@ -531,16 +541,20 @@ footer {
     display: none;
   }
   .hero-headline {
-    font-size: 4.5rem;
+    font-size: 35px;
     white-space: normal;
+    font-weight: 700;
   }
   .hero-text {
     width: unset;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    width: 85%;
+  
   }
   .hero-img img {
     border-radius: 10px;
     margin-top: 40px;
+    width: 100%;
   }
   .hero-section > .btn-signup {
     display: block;
