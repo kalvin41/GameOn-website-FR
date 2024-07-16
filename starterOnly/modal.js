@@ -107,7 +107,7 @@ function showSuccessModal() {
   successModal.style.display = "block";
 }
 function closeSuccessModal() {
-  const successModal = document.getElementById("success-modal");
+  
   modalbg.style.display = "none";
-  window.location.href = 'index.html'; // Redirection après fermeture du modal
+  window.location.href = 'index.html'; // Redirection after modal closing
 }
